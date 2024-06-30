@@ -1,0 +1,629 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-30T13:52:32.724Z",
+        "line": 4,
+        "name": "Order one product",
+        "description": "",
+        "id": "place-order-functinality-validation;order-one-product",
+        "after": [
+          {
+            "result": {
+              "duration": 143100300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterEveryScenarion()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7733537600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Initialize the browser with specific sites home page",
+            "match": {
+              "location": "stepDefinations.stepDefinationForPlaceOrderFunctionality.initialize_the_browser_with_specific_sites_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5269104700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Place order with \"Brocolli\" product in cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brocolli",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForPlaceOrderFunctionality.place_order_with_something_product_in_cart(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 797911700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Cart page populated with all information",
+            "match": {
+              "location": "stepDefinations.stepDefinationForPlaceOrderFunctionality.cart_page_populated_with_all_information()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6387203500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Order should be placed via order page",
+            "match": {
+              "location": "stepDefinations.stepDefinationForPlaceOrderFunctionality.order_should_be_placed_via_order_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreenKartFunctionalTest"
+          }
+        ]
+      }
+    ],
+    "name": "Place order functinality validation",
+    "description": "",
+    "id": "place-order-functinality-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/OrderProduct.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-30T13:52:53.180Z",
+        "line": 11,
+        "name": "Positive search with multiple value",
+        "description": "",
+        "id": "searching-functionality-with-multiple-data-passing-validation;positive-search-with-multiple-value;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 152014300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterEveryScenarion()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2872643800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on home page",
+            "match": {
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3429822600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User search with valid Brocolli",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brocolli",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_search_with_valid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64999000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search page is populated with exact Brocolli",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brocolli",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.search_page_is_populated_with_exact(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreenKartSearchTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-30T13:52:59.736Z",
+        "line": 12,
+        "name": "Positive search with multiple value",
+        "description": "",
+        "id": "searching-functionality-with-multiple-data-passing-validation;positive-search-with-multiple-value;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 163017200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterEveryScenarion()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2932530300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on home page",
+            "match": {
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3378214700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User search with valid Capsicum",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Capsicum",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_search_with_valid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57005000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search page is populated with exact Capsicum",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Capsicum",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.search_page_is_populated_with_exact(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreenKartSearchTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-30T13:53:06.281Z",
+        "line": 23,
+        "name": "Negative search with multiple value",
+        "description": "",
+        "id": "searching-functionality-with-multiple-data-passing-validation;negative-search-with-multiple-value;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 175011500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterEveryScenarion()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3005289600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User is on home page",
+            "match": {
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 319263600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User search with invalid Fish",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fish",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_search_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60004000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Search page is populated with \"no products matched\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "no products matched",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.search_page_is_populated_with_something_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreenKartSearchTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-30T13:53:09.868Z",
+        "line": 24,
+        "name": "Negative search with multiple value",
+        "description": "",
+        "id": "searching-functionality-with-multiple-data-passing-validation;negative-search-with-multiple-value;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 125253700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterEveryScenarion()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2846563500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User is on home page",
+            "match": {
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 311022400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User search with invalid Chicken",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chicken",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_search_with_invalid(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57003600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Search page is populated with \"no products matched\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "no products matched",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.search_page_is_populated_with_something_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreenKartSearchTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-30T13:53:13.217Z",
+        "line": 27,
+        "name": "Home page UI validation",
+        "description": "",
+        "id": "searching-functionality-with-multiple-data-passing-validation;home-page-ui-validation",
+        "after": [
+          {
+            "result": {
+              "duration": 383606600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterEveryScenarion()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2943172200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User is on home page",
+            "match": {
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3286419500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User search with specific \"ot\" letters for multiple product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ot",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.user_search_with_specific_something_letters_for_multiple_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86740700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Search page is populated with multiple products which contains \"ot\" letters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ot",
+                  "offset": 64
+                }
+              ],
+              "location": "stepDefinations.stepDefinationForSearchingFunctionality.search_page_is_populated_with_multiple_products_which_contains_something_letters(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreenKartSearchTest"
+          }
+        ]
+      }
+    ],
+    "name": "Searching functionality with multiple data passing validation",
+    "description": "",
+    "id": "searching-functionality-with-multiple-data-passing-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Search.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-30T13:53:19.924Z",
+        "line": 4,
+        "name": "Home page UI validation",
+        "description": "",
+        "id": "ui-validation;home-page-ui-validation",
+        "after": [
+          {
+            "result": {
+              "duration": 90004400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterEveryScenarion()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2600614200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Initialize the browser with specific site",
+            "match": {
+              "location": "stepDefinations.stepDefinationForUITesting.initialize_the_browser_with_specific_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1001700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Browse to home page",
+            "match": {
+              "location": "stepDefinations.stepDefinationForUITesting.browse_to_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 865147200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Home page is populated with all of its elements",
+            "match": {
+              "location": "stepDefinations.stepDefinationForUITesting.home_page_is_populated_with_all_of_its_elements()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreenKartUITest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-30T13:53:23.493Z",
+        "line": 10,
+        "name": "Cart page UI validation",
+        "description": "",
+        "id": "ui-validation;cart-page-ui-validation",
+        "after": [
+          {
+            "result": {
+              "duration": 94417000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.AfterEveryScenarion()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2659902900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Initialize the browser with specific site",
+            "match": {
+              "location": "stepDefinations.stepDefinationForUITesting.initialize_the_browser_with_specific_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 704642600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Navigate to cart page after adding one product",
+            "match": {
+              "location": "stepDefinations.stepDefinationForUITesting.navigate_to_cart_page_after_adding_one_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 608178200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Cart page is populated with all of its elements",
+            "match": {
+              "location": "stepDefinations.stepDefinationForUITesting.cart_page_is_populated_with_all_of_its_elements()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 115007500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Selected product information should be the same as home page",
+            "match": {
+              "location": "stepDefinations.stepDefinationForUITesting.selected_product_information_should_be_the_same_as_home_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GreenKartUITest"
+          }
+        ]
+      }
+    ],
+    "name": "UI validation",
+    "description": "",
+    "id": "ui-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/UIValidation.feature",
+    "tags": []
+  }
+]
