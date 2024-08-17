@@ -19,7 +19,7 @@
 - Configure pom.xml.
     - I have written all the maven dependencies in **pom.xml** file. So if your are running this project after a long time, then please update all the dependencies with current version in this file.   
     - Update your Cucumber-Java and Cucumber-JUnit dependencies from this link: [https://mvnrepository.com/artifact/io.cucumber](https://mvnrepository.com/artifact/io.cucumber).
-    - Update your Selenium-Java dependencies from this link: [https://mvnrepository.com/artifact/org.seleniumhq.selenium](https://mvnrepository.com/artifact/org.seleniumhq.selenium).
+    - Update your Selenium-Java dependencies from this link: [https://mvnrepository.com/artifact/org.seleniumhq.selenium](https://mvnrepository.com/artifact/org.seleniumhq.selenium). 
     
 
     

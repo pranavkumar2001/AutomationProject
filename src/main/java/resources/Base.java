@@ -19,7 +19,7 @@ public class Base {
 		String browserName = pro.getProperty("browser");
 		if (browserName.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\Drivers\\chromedriver.exe");
-			driver = new ChromeDriverx();
+			driver = new ChromeDriver();
 		} else if (browserName.equals("Firefox")) {
 			System.getProperty("webdriver.gecko.driver",
 					"C:\\Asha\\Selenium\\geckodriver-v0.23.0-win64\\geckodriver.exe");
