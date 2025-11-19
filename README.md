@@ -10,10 +10,7 @@
 
 - Configure webdriver.
     - I used ChromeDriver but you can choose other webdriver eg. Mozilla GeckoDriver. I have written code for GeckoDriver also. 
-    - First download ChromeDriver from [http://chromedriver.chromium.org/downloads](http://chromedriver.chromium.org/downloads).
-    - Copy your downloaded **chromedriver.exe** file path.
-    - Go to **GreenKartPractice\src\main\java\resources\Base.java** file.
-    - Paste the copied driver file path in `System.setProperty("webdriver.chrome.driver","Paste chrome driver path here")` or `System.setProperty("webdriver.gecko.driver","Paste gecko driver path here")`.
+    - No setup for Webdriver is required, all handed by WebDriverManager.
     
 	
 - Configure pom.xml.
