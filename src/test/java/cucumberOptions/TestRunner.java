@@ -7,7 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/test/java/features",
-		glue = "stepDefinations", stepNotifications = true, tags="@GreenKartUITest or @GreenKartFunctionalTest or @GreenKartSearchTest",
+		glue = "stepDefinations", stepNotifications = true,
+        tags="@GreenKartUITest or @GreenKartFunctionalTest or @GreenKartSearchTest",
 		plugin = {"html:target/cucumber.html", "json:target/cucmber.json", "junit:target/cukes.xml"}
 		)
 

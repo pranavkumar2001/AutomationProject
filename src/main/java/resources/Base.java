@@ -4,9 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,32 +16,45 @@ public class Base {
 
 	public static WebDriver driver;
 	public Properties pro;
-	
-	public WebDriver invokeBrowser() throws IOException {
 
-		this.loadDataPropertiesFile();
-		String browserName = pro.getProperty("browser");
-		if (browserName.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\Drivers\\chromedriver.exe");
-			driver = new ChromeDriver();
-		} else if (browserName.equals("Firefox")) {
-			System.getProperty("webdriver.gecko.driver",
-					"C:\\Asha\\Selenium\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-			driver = new FirefoxDriver();
-		}
-		System.out.println("**********************************************");
-		System.out.println("Data taken from other branch is: "+getMailFromOtherBranch());
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		return driver;
+    public WebDriver invokeBrowser() throws IOException {
 
-	}
-	public void loadDataPropertiesFile() throws IOException {
+        this.loadDataPropertiesFile();
+        String browserName = pro.getProperty("browser");
+
+        switch (browserName.toLowerCase()) {
+
+            case "chrome":
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
+                break;
+
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+                break;
+
+            default:
+                throw new RuntimeException("Unsupported browser: " + browserName);
+        }
+
+        System.out.println("**********************************************");
+        System.out.println("Data taken from other branch is: " + getMailFromOtherBranch());
+
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+
+        // Selenium 4 Timeout Syntax
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+
+        return driver;
+    }
+
+    public void loadDataPropertiesFile() throws IOException {
 		pro = new Properties();
 		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
+				System.getProperty("user.dir")+"/src/main/java/resources/data.properties");
 
 		pro.load(fis);
 	}
